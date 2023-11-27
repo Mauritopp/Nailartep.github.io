@@ -1,0 +1,118 @@
+.navbar-brand {
+    font-weight: 500;
+    color: #009970;
+    font-size: 24px;
+    transition: 0.3s color;
+}
+
+.navbar {
+    background-color: #B76D79;;
+}
+
+.navbar-toggler {
+    border: none;
+    font-size: 1.25rem;
+}
+
+.navbar-toggler:focus,
+.btn-close:focus {
+    box-shadow: none;
+    outline: none;
+}
+
+.nav-link {
+    color: #000000;
+    font-weight: 500;
+    position: relative;
+}
+
+
+
+
+@media (min-width: 991px) {
+    .nav-link::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+        height: 2px;
+        background-color: #009970;
+        visibility: hidden;
+        transition: 0.3s ease-in-out;
+    }
+
+    .nav-link:hover::before,
+    .nav-link.active::before {
+        width: 100%;
+        visibility: visible;
+    }
+}
+
+/* Ajustar la altura de las imágenes del carrusel */
+.carousel-inner img {
+    height: 1190px;
+    /* Puedes ajustar este valor según tus necesidades */
+    object-fit: cover;
+    /* Esto asegura que la imagen se ajuste manteniendo su relación de aspecto */
+}
+
+.Iconos {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.Iconos img {
+    margin-bottom: 30px;
+    width: 5%;
+    height: auto;
+}
+
+.ubicacion {
+
+    margin-top: 12px;
+    text-align: center;
+
+}
+
+.ubicacion iframe {
+    margin: auto;
+    display: block;
+
+}
+
+
+.formulario {
+    margin-top: 50px;
+}
+
+
+#miFormulario input,
+#miFormulario textarea {
+    background-color: #ffffff;
+}
+
+
+#miFormulario label,
+#miFormulario button {
+    color: #333;
+}
+
+
+#miFormulario {
+    background-color: #B76D79;
+}
+
+#miFormulario button {
+    background-color: #ffffff;
+}
+
+/* Agregar negrita al texto de las etiquetas */
+#miFormulario label.form-label {
+    font-weight: bold;
+    /* Agrega negrita al texto */
+}
